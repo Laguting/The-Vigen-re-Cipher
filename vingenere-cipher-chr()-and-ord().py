@@ -2,6 +2,13 @@
 # BSCpE 1-4
 # Task: The inputted message and keyword by the user which should be in all uppercase and no spaces to be ciphered using Vigenere cipher.
 # Initial Messages
+from pyfiglet import Figlet
+from termcolor import colored
+ti_tle = Figlet(font = "starwars")
+print("\33[1m_" * 177)
+print(colored(ti_tle.renderText("\nTHE VIGENERE CIPHER"), "magenta"))
+print("\33[1m_" * 177)
+
 # Start the program
 # Get the user's message and keyword
 # Check the equivalent numbers of the letters inputted (Message & Key)
