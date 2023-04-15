@@ -9,6 +9,11 @@ print("\33[1m_" * 177)
 print(colored(ti_tle.renderText("\nTHE VIGENERE CIPHER"), "magenta"))
 print("\33[1m_" * 177)
 
+welcome = Figlet (font = "slant")
+print("\33[36m_\33[0m" * 177)
+print(colored(welcome.renderText("HI, WELCOME!"), "yellow"))
+print("\33[36m_\33[0m" * 177)
+
 # Start the program
 # Get the user's message and keyword
 # Check the equivalent numbers of the letters inputted (Message & Key)
