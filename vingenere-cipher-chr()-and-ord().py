@@ -30,6 +30,7 @@ elif start == "N":
     quit
 else:
     quit
+
 # Get the user's message and keyword make the code replace the input into uppercase letters with no spaces
 instruction = Figlet(font = "bubble")
 print("\33[7m-+°\33[0m" * 45)
@@ -40,8 +41,19 @@ message_input = message_input.upper().replace(" ","")
 key_input = input("\n\n\33[105mKey\U0001F511: \33[0m")
 key_input = key_input.upper().replace(" ","")
 print("\33[7m-+°\33[0m" * 45)
+
 # Check the equivalent numbers of the letters inputted (Message & Key)
+message_input = [ord(char) - 65 for char in message_input if char.isalpha()]
+key_input = [ord(char) - 65 for char in key_input]
+
 # Add the equivalent numbers of the letters inputted (Message & Key)
+ciphered_txt = []
+for i, val in enumerate(message_input):
+    key_val = key_input[i % len(key_input)]
+    ciphered_val = (val + key_val) % 26
+    ciphered_txt.append(ciphered_val)
 # Get the equivalent letters of the sum extracted from the Message & Key
+ciphered_txt = ''.join([chr(val + 65) for val in ciphered_txt])
+
 # Print the Ciphertext
 # Outro
