@@ -21,7 +21,7 @@ if start == "Y":
     print("\n\033[96m\33[4mThe Program is Starting...\033[0m\n")
     def countdown(n):
             if(n==0):
-                print ("\n\33[45m\033[3mThank you for your patience\033[0m" + "\33[45m\033[3m!\033[0m")
+                print ("\n\33[45m\033[3mThank you for your patience\033[0m" + "\33[45m\033[3m!\033[0m\n")
             else:
                 print(n)
                 countdown(n-1)
@@ -40,6 +40,7 @@ message_input = input("\n\33[104mMessage\U0001F4AC: \33[0m")
 message_input = message_input.upper().replace(" ","")
 key_input = input("\n\n\33[105mKey\U0001F511: \33[0m")
 key_input = key_input.upper().replace(" ","")
+print("")
 print("\33[7m-+°\33[0m" * 45)
 
 # Check the equivalent numbers of the letters inputted (Message & Key)
@@ -56,4 +57,14 @@ for i, val in enumerate(message_input):
 ciphered_txt = ''.join([chr(val + 65) for val in ciphered_txt])
 
 # Print the Ciphertext
+print("")
+reveal_rslt = Figlet(font = "speed")
+print(colored(reveal_rslt.renderText("HERE IS THE RESULT..."), "cyan"))
+print("\n\33[43m\33[41mThe result is: \33[0m", ciphered_txt, "\n\n")
+print("\33[32m-+°\33[0m" * 45)
+
 # Outro
+ou_tro = Figlet(font = "bubble")
+print(colored(ou_tro.renderText("Thank you for availing our service!"), "green")) 
+closing = Figlet(font = "isometric3")
+print(colored(closing.renderText("Closing..."), "white"))
