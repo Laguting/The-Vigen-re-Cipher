@@ -15,7 +15,7 @@ print(colored(welcome.renderText("HI, WELCOME!"), "yellow"))
 print("\33[36m_\33[0m" * 177)
 
 # Start the program
-start = input("\n\n\33[1m\33[33mDo you want to start the program?\U0001F481 \n Enter Y if 'Yes' and N if 'No': \33[0m\n")
+start = input("\n\n\33[1m\33[33mDo you want to start the program?\U0001F481 \n Enter Y if 'Yes' and N if 'No': \33[0m")
 start = start.upper()
 if start == "Y":
     print("\n\033[96m\33[4mThe Program is Starting...\033[0m\n")
@@ -32,14 +32,14 @@ else:
     quit
 # Get the user's message and keyword make the code replace the input into uppercase letters with no spaces
 instruction = Figlet(font = "bubble")
-print("\n\33[1m°\33[7m-+°\33[0m" * 45)
+print("\33[7m-+°\33[0m" * 45)
 print(colored(instruction.renderText("Read the Following !!!"), "red"))
 inst_content = ("\33[102mEnter the Message and Keyword you have in mind below\U0001F53D \033[0m")
 message_input = input("\n\33[104mMessage\U0001F4AC: \33[0m")
 message_input = message_input.upper().replace(" ","")
 key_input = input("\n\n\33[105mKey\U0001F511: \33[0m")
 key_input = key_input.upper().replace(" ","")
-print("\n\33[1m[7m°-+°\33[0m" * 45)
+print("\33[7m-+°\33[0m" * 45)
 # Check the equivalent numbers of the letters inputted (Message & Key)
 # Add the equivalent numbers of the letters inputted (Message & Key)
 # Get the equivalent letters of the sum extracted from the Message & Key
