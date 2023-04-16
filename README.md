@@ -14,7 +14,16 @@ https://user-images.githubusercontent.com/129570700/232308583-1b16076c-e824-4da3
 4. Enter the message and keyword.
 5. The program will display the encrypted message.
 
+***Note: The message and keyword should be entered in all uppercase letters with no spaces.***
+
+
 *Sample Picture*
 ![2](https://user-images.githubusercontent.com/129570700/232312501-76a0fc81-e835-41f0-928d-a9641c52965f.PNG)
 
 ### How to use in git bash 🚀?
+> git clone https://github.com/Laguting/The-Vigen-re-Cipher.git
+
+> cd The-Vigen-re-Cipher/
+
+> python vingenere-cipher-chr()-and-ord()
+
