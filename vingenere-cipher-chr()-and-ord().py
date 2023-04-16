@@ -15,17 +15,15 @@ print(colored(welcome.renderText("HI, WELCOME!"), "yellow"))
 print("\33[36m_\33[0m" * 177)
 
 # Start the program
+import time
 start = input("\n\n\33[1m\33[33mDo you want to start the program?\U0001F481 \n Enter Y if 'Yes' and N if 'No': \33[0m")
 start = start.upper()
 if start == "Y":
     print("\n\033[96m\33[4mThe Program is Starting...\033[0m\n")
-    def countdown(n):
-            if(n==0):
-                print ("\n\33[45m\033[3mThank you for your patience\033[0m" + "\33[45m\033[3m!\033[0m\n")
-            else:
-                print(n)
-                countdown(n-1)
-    countdown(5)
+    print("\33[1m\33[34mProcessing................................\U0001F917\33[0m")
+    time.sleep(5)
+    print("\n\33[45m\033[3mThank you for your patience\033[0m" + "\33[45m\033[3m!\033[0m\n")
+
 elif start == "N":
     quit
 else:
