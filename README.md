@@ -27,3 +27,11 @@ https://user-images.githubusercontent.com/129570700/232308583-1b16076c-e824-4da3
 
 > python vingenere-cipher-chr()-and-ord()
 
+# INSTALLATIONS 📥
+ - **This program used two installations namely Pyfiglet and Termcolor. Install it by typing the following in the terminal.**
+> pip install pyfiglet
+
+> pip install termcolor
+
+# CREDITS 👩
+- Developed by *Maricon Jane G. Laguting* from *BSCpE 1-4*
