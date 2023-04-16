@@ -10,4 +10,11 @@ https://user-images.githubusercontent.com/129570700/232308583-1b16076c-e824-4da3
 ### How to run in IDE 👩🏻‍💻?
 1. Copy the code to your preferred IDE
 2. Run the program
+3. Enter "Y" if yes or "N" to quit.
+4. Enter the message and keyword.
+5. The program will display the encrypted message.
+
+*Sample Picture*
+
+
 ### How to use in git bash 🚀?
