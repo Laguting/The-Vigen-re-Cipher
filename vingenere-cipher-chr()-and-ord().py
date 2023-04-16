@@ -20,10 +20,9 @@ start = input("\n\n\33[1m\33[33mDo you want to start the program?\U0001F481 \n E
 start = start.upper()
 if start == "Y":
     print("\n\033[96m\33[4mThe Program is Starting...\033[0m\n")
-    print("\33[1m\33[34mProcessing................................\U0001F917\33[0m")
+    print("\33[1m\33[34mStarting................................\U0001F917\33[0m")
     time.sleep(5)
     print("\n\33[45m\033[3mThank you for your patience\033[0m" + "\33[45m\033[3m!\033[0m\n")
-
 elif start == "N":
     quit
 else:
@@ -58,7 +57,7 @@ ciphered_txt = ''.join([chr(val + 65) for val in ciphered_txt])
 print("")
 reveal_rslt = Figlet(font = "speed")
 print(colored(reveal_rslt.renderText("HERE IS THE RESULT..."), "cyan"))
-print("\n\33[43m\33[41mThe result is: \33[0m", ciphered_txt, "\n\n")
+print("\n\33[43m\33[41mThe result is \U0001F973: \33[0m", ciphered_txt, "\n\n")
 print("\33[32m-+°\33[0m" * 45)
 
 # Outro
@@ -66,3 +65,4 @@ ou_tro = Figlet(font = "bubble")
 print(colored(ou_tro.renderText("Thank you for availing our service!"), "green")) 
 closing = Figlet(font = "isometric3")
 print(colored(closing.renderText("Closing..."), "white"))
+print("\U0001F971" * 40)
