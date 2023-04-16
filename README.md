@@ -4,6 +4,10 @@ https://user-images.githubusercontent.com/129570700/232308583-1b16076c-e824-4da3
 # DESCRIPTION 📝
 - The program  will use the Vigenere Cipher in which the Vigenere Cipher is an example of a polyalphabetic substitution cipher that encrypts and decrypts messages using a keyword.
 - The program used the chr() and ord() to get the equivalent letters and numbers.
-- 
-### How to use in IDE 👩🏻‍💻?
+- The program also has a 5 second timer to initiate the program.
+- It also uses pyfiglet and termcolor.
+
+### How to run in IDE 👩🏻‍💻?
+1. Copy the code to your preferred IDE
+2. Run the program
 ### How to use in git bash 🚀?
